@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+      <title>MUJERES EN EL MUNDO DE LA COMPUTACION</title>
+      <link href="style.css"  rel="stylesheet">
+    </head>
+    <main>
+    <body>
+      <header>
+        <div class="container">
+          <nav>
+          <h1 class="logo">Mi primer pagina web!</h1>
+          </div>
+           
+          <button class="boton"><a href="#quien-soy">Quien soy</a></button>
+          <button class="boton" ><a href="#Que-es-hardware">Que es hardware</a></button>
+        <button class="boton"><a href="#">Otros Temas</a></button>
+        <button class="boton"><a href="#que-es-git?"> ¿Que es Git?</a></button>
+       
+  </header>
+  <div class="cuerpodetexto"> 
+        <img src="imagenes/foto git.jpg" alt="logo representativo de git"/> <br>
+      <h1 id="que-es-git?">¿QUE ES GIT?</h1>
+         <P>Git es un sistema de control de versiones distribuido que te permite gestionar y seguir los cambios en archivos y proyectos de software. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.</P>
+         <p> Los desarrolladores que han trabajado con Git cuentan con una buena representación en la base de talentos disponibles para el desarrollo de software, y este sistema funciona a la perfección en una amplia variedad de sistemas operativos e IDE (entornos de desarrollo integrados).</p>
+
+         <h3> ¿QUE PUEDES HACER EN GIT?</h3>
+         <ol>
+          <li>Crear ramas a partir de la copia principal de archivos en los que tú (y tus colaboradores) estáran trabajando.</li>
+             <li>Realizar modificaciones en los archivos de forma independiente y segura en tu propia rama personal.</li>
+             <li>Dejar que Git fusione mediante combinación y de forma inteligente los cambios específicos en la copia principal de archivos,<br> de modo que los cambios no afecten a las actualizaciones de otras personas.</li>
+             <li>Dejar que Git realice un seguimiento de tus cambios y los de otras personas, por lo que todos siguen trabajando en la versión más actualizada del proyecto.</li>
+        </ol>
+        <h1> A continuacion, explicare como iniciar un repositorio localmente</h1>
+        
+          <h3>1.primero verificamos si tenemos instalado git en nuestra computadora</h3>
+              <p>para verificar, escribimos el siguiente comando <strong>git --version</strong> y damos <strong>enter,</strong> anexo ejemplo de lo descrito anteriormente:</p>
+              
+             <section><img src="imagenes/installergit.png" alt="ejemplo de como verificar la instalacion de git"/> <br> 
+               <p>Una vez verifiquemos que tenemos instalado git, procederemos a crear un directorio en caso de que no lo tengamos creado, ya que nuestro proyecto se almacenara ahi.</p> 
+           <h3>2.Creacion de un nuevo repositorio en nuestra computadora:</h3>
+               <p>para crear el repositiro debemos ejecutar los siguientes comodandos: <strong><br>-mkdir nombre-del-proyecto <br>
+                -cd nombre-del-proyecto</strong><br> anexo ejemplo de lo descrito anterirmente:</p>
+                <img src="imagenes/crear repositorio.png" alt="imagen donde se explica los comandos a utilizar"/>
+                
+                <p><br>Una vez creado y asignado el nombre al directorio, seguiremos con lo siguiente que sera: inicar con el repositorio.</p>
+
+          <h3>3.inicializacion del repositorio en nuestra computadora:</h3>
+                <p>Una vez dentro del directorio de tu proyecto, inicializa un nuevo repositorio Git, con los comandos: <strong>git init,</strong> anexo ejemplo de lo descrito anteriormente:</p>
+                <img src="imagenes/inicializacion repositorio.png" alt="comandos utilizados para inicializar el repositorio"/>
+
+                <p><br> <strong>Propósito:</strong> Este comando crea un subdirectorio llamado .git en tu proyecto,<br> que contiene todos los archivos necesarios para el seguimiento de versiones.<br> No se añade ningún archivo al control de versiones en este paso.</p>
+                
+                <p>una vez inicializado el repositorio, seguiremos con el siguiente paso que es: Agregar archivos que tengas o estes por iniciar.</p>
+
+         <h3>4.Agregar archivos al repositorio, en nuestra computadora:</h3>
+                <p>Una vez que tengas algunos archivos, puedes añadirlos a Git, con los comandos:<strong>git add archivo.txt,</strong> anexo ejemplo de lo anteriormente dicho:</p>
+                   <img src="imagenes/agregar archivos a git.png" alt="comando utilizado para agregar archivos a git"/>
+
+               <p><br><strong>Propósito:</strong> El comando<strong> git add</strong>  agrega archivos al área de preparación (staging area),<br> lo que significa que Git comenzará a seguir los cambios de esos archivos.</p>
+
+               <p>Una vez agregado archivos, procederemos a hacer lo siguiente que es  un commit.</p>
+    
+    
+    
+         <h3>5.Hacer un commit en git:</h3>
+
+               <p>Después de haber añadido archivos, necesitaras confirmar los cambios con un commit, para eso utilizaremos los comandos: <strong>git commit -m</strong> y seguido de esto entre comillas dobles pondras un mensaje de commit(es recomendable ponerle como nombre el cambio que le estas haciendo para poder identicar mas rapidamente). anexo ejemplo de lo anterimente descrito:</p>
+                   <img src="imagenes/hacer commit.png" alt="imagen de comandos utilizados para hacer commit"/>
+                       <p><br><strong>propósito:</strong> Este comando guarda el estado actual de los archivos en el repositorio local,<br> con un mensaje que describe el cambio. Es un punto de referencia en la historia del proyecto.</p>
+              <p>Una vez hecho commit, procederemos a ver el estado del repositorio.</p></nav>
+         <h3>6. Ver el estado del repositorio desde nuestro computador en git:</h3>
+              <p>Puedes ver el estado de tu repositorio en cualquier momento usando los siguientes comandos: <strong>git status</strong> en tu computadora, anexo ejemplo de lo anteriormente dicho:</p>
+                 <img src="imagenes/ver estado del repositorio.png" alt="imagen de comandos utilizados para ver el estado del repositorio"/>
+                 <p><strong>Propósito:</strong> Este comando muestra qué archivos están en el área de preparación,<br> cuáles no lo están y si hay archivos que no están siendo rastreados.</p>
+                 <p>Una vez sabemos el estado de nuestros archivos,<br> podemos ver el<strong> historial</strong>  de commits realizados en nuestro proyecto.</p>
+         <h3>7. Ver el historial de commits</h3>
+               <p>Para ver el historial de commits, debemos utilizar el siguiente comando: <strong>git log,
+               </strong> anexo ejemplo de lo anteriormente dicho:</p>
+                <img src="imagenes/historialdecommit.png" alt="imagen de comando utilizado para ver historial de commits"/>
+
+                <p><br><strong>Propósito:</strong> Este comando muestra una lista de todos los commits realizados en el repositorio,<br> junto con información como el hash del commit, el autor y el mensaje.</p>
+    
+         <h1>Branches:</h1>
+                <img src="imagenes/branchesgit.jpg" alt="imagen de presentacion de branches" width="900px" height="500px" /> 
+          <h2>¿Para que sirve?</h2>
+
+            <p>Aislamiento de características: Permiten trabajar en una nueva funcionalidad sin interferir con el código estable.</p>
+            <p>Colaboración: Varios desarrolladores pueden trabajar en diferentes ramas al mismo tiempo.</p>
+            <p>Pruebas: Facilitan la prueba de nuevas ideas sin comprometer el código existente.</p>
+            
+          <h2>Cómo crear ramas en Git</h2>
+
+           <h4> 1. Crear una nueva rama</h4>
+            <p>Para crear una nueva rama, puedes usar el siguiente comando en tu computadora:<strong> checkout -b nombre-de-la-rama</strong></p>
+            <img src="imagenes/crear branches.png" alt="imagen de el comando para crear una nueva branche"/><br>
+          
+            
+            <p>Esto crea una nueva rama y cambia a ella inmediatamente.<br><strong> Por ejemplo, </strong><br>si quieres trabajar en una nueva característica llamada "nueva-funcionalidad":</p>
+              <img src="imagenes/ejemplo funcionalidad branches.png" alt="ejemplo de funcionalidad de branches"/><br>
+            
+          <h4>2. Hacer cambios y confirmar</h4> 
+            <p>Realiza los cambios que necesites en tu código, luego añade y confirma esos cambios con los siguientes comandos:<br><strong>-add .<br>
+            -git commit -m "Añadida nueva funcionalidad"</strong> como a continuacion: </p>
+            <img src="imagenes/hacercambiosyconfirmar.png" alt="imagen de hacer cambios y confirmar"/><br>
+            
+          
+            
+          <h3>3. Volver a la rama principal</h3>
+           <p> Una vez que hayas terminado de trabajar en tu rama, puedes volver a la rama principal (por ejemplo, main) con los siguientes comandos:<strong> git checkout main</strong></p>
+             <img src="imagenes/volver a rama principal main.png" alt="comandos para ir a la rama principal o inicial main"/><br>
+            
+          <h2>¿Cuándo hacer un merge?</h2>
+               <p>Cuando hayas terminado de trabajar en tu rama y estés listo para integrar esos cambios en la rama principal, es momento de hacer un merge.</p>
+            
+            <h3>Ejemplo de merge</h3>
+    <ol>
+                <h4>1.Hacer el merge</h4> 
+            Con tu rama principal activa, utiliza el comando merge para integrar los cambios:<br>
+            <img src="imagenes/nueva merge.png" alt="comando utlizado para hacer merge"/>
+            <p>Esto combinará los cambios de nueva-funcionalidad en main.</p>
+            
+                <h4> 2.Resolver conflictos (si los hay)</h4>
+                    <p>Si hay conflictos (por ejemplo, si se han realizado cambios en las mismas líneas de código en ambas ramas), Git te lo notificará. Necesitarás resolver esos conflictos manualmente:</p>
+            
+            <p>-Edita los archivos conflictivos.
+            Luego,<br> -añade y confirma los cambios:</p>
+               <img src="imagenes/archivoconflicto.png" alt="comando para resolver problemas de archivos merge"/><br>
+
+            <h4>Eliminar la rama (opcional)</h4> 
+                 <p>Después de realizar el merge, puedes eliminar la rama si ya no la necesitas con el siguiente comando:<strong> branch -d nueva-funcionalidad</strong></p>
+                     <img src="imagenes/eliminar rama.png" alt="comando para eliminar rama"/>
+
+        
+            
+                <p><strong> Ramas (branches) en Git es una práctica esencial para gestionar el desarrollo de proyectos de manera eficiente.<br> Las ramas permiten trabajar en diferentes características,<br> correcciones de errores o experimentos sin afectar la línea principal de desarrollo (generalmente llamada main o master).</strong></p>
+    </ol>
+  </div>
+    
+
+      <section class="container">
+      <h1 id="Que-es-hardware">¿Que es Hardware?</h1>
+      <p>el hardware son los objetos y partes que forman una máquina y que puedes ver y tocar. Sin hardware, no podrías usar el software, que es el conjunto de programas y aplicaciones que haces funcionar en esos dispositivos.</p>
+
+      <h1> LAS MUJERES EN EL MUNDO DE LA COMPUTACION</h1>
+        <p>A traves de la historia de la humanidad y sus inmensiones, hay una que se esta tomando un amplio campo en la actulidad, y es la inmension de las computadoras. Estas han llegado a cambiar en su totalidad la experiencia tanto personal, laboral y  educativa....etc de las personas.<br>
+        Tras la llegada de las computadoras se pudo optimizar trabajos que antes tomaban un tiempo mas de aplicacion y por ende de realizacion. Pero para esto hubieron ciertas personas que pusieron sus primeros simientos, claramente esta el sexo masculino, aportes muy importantes que no se pueden desmeritar. Pero en este caso nos enfocaremos en el sexo femenino, en las mujeres que tambien ayudaron a la inmesion e innovasion de la computadora, sin ellas el mundo y avance de la computacion  fuera sido totalmente diferente.<br>
+           Teniendo en cuenta esto, ¡<strong>hablaremos un poco de ellas!</strong></p>
+           <P><strong> Da click, para ir directamente a:</strong></P>
+           <section class="container1">
+           <a  href="#grace1"> 1.Grace M</a> <br> 
+           <a href="#evelyn2"> 2.Evelyn B</a><br>
+           <a href="#stephanie3"> 3.Stephanie S</a><br>
+           <a href="#mary4"> 4.Mary W</a><br>
+           <a href="#aprendizaje1"> Aprendizaje y Reflexion</a><br>
+           </section>
+
+           <h2 id="grace1">1.GRACE MURRAY HOPPER:</h2>
+           <p>Grace Hopper, mujer con una amplia trayectoria de vida, fue cientifica computacional y militar de Estados Unidos. pionera y tesa en las ciencias de la computacion. Una de las primeras programadoras en usar el <strong>Mark I</strong> </p>
+           <p>Considerada, madre de la programacion y creadora del <strong>Lenguaje Común Orientado a Negocios(COBOL),considerado uno de los primeros programas complejos de ordenador.</strong><br>
+           <img src="imagenes/murray.jpg" width="500px" alt="Foto de Grace Murray junto a ordenadores."/></p>
+
+           
+           <h2 id="evelyn2">2.EVELYN BEREZIN:</h2>
+           <P>Fue una mujer fisica, informatica y empresaria de Estados Unidos, quien es llamada la madre de los  <strong>procesadores de texto.</strong> uno de sus mas reconocidos proyectos fue el desarrollo del primer sistema computarizado de reserva o guardado de billetes de lineas aéreas, para la empresa United Airlines. En 1953, creo el <strongs>primer ordenandor de oficina el cual es considera el primero de estos tipos de ordenandor.</strongs><br>
+           <img src="imagenes/EVELYN BEREZIN (1).jpg" width="505px" alt="foto de Evelyn  con un ordenador."/>
+          </p>
+           
+
+           <h2 id="stephanie3">3.STEPHANIE SHIRLEY:</h2>
+           <P>Una mujer filantropa britanica, empresaria informatica. considerda la primera mujer en fundar en 1962 una empresa de programacion llamada <strong>Freelance Programmers Ltda</strong></P><br>
+          <img src="imagenes/STEPHANIE SHIRLEY.jpg" width="500px" alt= "foto de Stephanie Shirley"/>
+
+           <p><h2 id="mary4">4.MARY ALLEN WILKES</h2>
+            Mujer abogada, programdora e ingeniera de hardware, fue una de las mujeres que colaboro en la creacion del <strong>primer ordenador personal</strong> en el año <strong>1961.</strong> Es considera la primera persona en utilizar un computador en casa y para el teletrabajo</P><br>
+          <img src="imagenes/MARY ALLEN WILKES.jpg" width="500px" alt="foto de Mary Allen Wilkes"/> 
+
+           
+          <p><h3 id="aprendizaje1">APRENDIZAJE Y REFLEXION</h3>
+           Teniendo en cuenta toda la trayectoria de estas mujeres podemos decir y reflexionar sonbre todo el desarrollo tecnologico tanto de software como de hardware, que se a desarrollado con ayuda ayuda de las mujeres y como tal tamnien de los hombres, se puede rescatar que para este campo de accio, cualquiera se puede embarcar y generar soluciones para sociedad en si misma. gracias a todas estas personas hoy por hoy conocemos lo que es llamado software y hardware en la actualidad.</p>
+            <img src="imagenes/mujer y computadoras.jpg" width="500px" alt="imagen sobre las  mujeres en la computacion a sus inicios"/> <br>
+          </section>
+          <section class="presentacion">
+            <h1 id="quien-soy">¿Quien soy?</h1>
+            <p>Mi nombre es Dario Andres Guerrero Cantillo, estudio Inginieria de Software y Datos, estoy comenzando este nuevo proyecto, y espero lograrlo. me encuentro en Orito-Putumayo, espero les guste esta pagina, soy novato pero pronto ire adquiriendo todos los conocimientos en esta area para asi poder mejorar mis proyectos, gracias.</p><br>
+          <footer>
+              <div class="piedepagina">
+                <p>&copy; DARIO A GUERRERO C</p>
+                <p>Estudiante de la IU DIGITAL DE ANTIOQUIA, 2024.</p>
+                
+ </div>
+            </footer>
+
+          </section>
+    </body>
+    </main>
+</html>
